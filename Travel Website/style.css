@@ -1,0 +1,236 @@
+:root{
+    --heroimage:url(/images/Gemini_Generated_Image_72mkcv72mkcv72mk-\(1\)-\(1\).png);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    margin:10px 0 0 40px;
+    transition: 0.2s;
+    will-change:transform , box-shadow;
+    z-index: 10;
+}
+
+
+header{
+    width:1351px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#cee6ff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.hero{
+    height:calc(100vh - 80px);
+    background: var(--heroimage) no-repeat center center/cover;
+    width: 1351px;
+    height: 561px ;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size:22px;
+    margin:0 15px ;
+}
+
+ul li a {
+    color:black;
+    text-decoration: none;
+    font-weight: 600;   
+    transition: 0.2s ;
+    font-family: serif;
+    will-change: transform , box-shadow;
+    font-family: sans-serif;
+}
+
+ul li a:hover{
+    color:white;
+    transform: translateY(3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    background-color:#1C3C66;
+    border-radius:10px;
+    padding: 5px 5px ;
+}
+
+.trip-btn{
+    background-color:#1C9FF0;
+    color: white;
+    padding:10px 20px;
+    border-radius:25px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 800;
+    margin-left:40px;
+    transition:0.2s;
+    will-change:background-color , color , transform , box-shadow;
+
+}
+
+.trip-btn:hover{
+   background-color: #1C3C66;
+   color: white;
+   transform:translateY(3px);
+   box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+.sec-head{
+    display:inline-block;
+    text-align: center;
+    margin:40px 420px;
+    font-family:sans-serif;
+    font-size:60px;
+    font-weight: 700;
+    color: #1C3C66;
+    border-bottom: 4px solid #1C3C66;
+    padding-bottom:10px;
+} 
+
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    height: 400px;
+    background: no-repeat center center/cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.card-1 { 
+
+    background-image: url('https://i.pinimg.com/736x/56/7a/10/567a108cbb9b49166f31d3d1d7ad8d63.jpg'); 
+}
+.card-2 { 
+
+    background-image: url('https://i.pinimg.com/1200x/a4/12/92/a41292008f1d099773970709e970d321.jpg'); 
+}
+.card-3 { 
+
+    background-image: url('https://i.pinimg.com/1200x/b8/32/92/b83292f609f94165e134f902e7680f66.jpg'); 
+}
+
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); 
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+}
+
+/* --- Features Section  --- */
+.features {
+    background-color: #e3e3e398;
+}
+
+.section.features h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #1C3C66;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    max-width: 1000px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.feature-item {
+    flex-basis: 30%; 
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    color:#1C3C66;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color:#1C3C66;
+    color:white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: sans-serif;
+    margin-top:20px;
+}
+
+.sec-head{
+    display:inline-block;
+    text-align: center;
+    margin:40px 0 0 390px ;
+    font-family:sans-serif;
+}
+
+.para-2{
+    margin-top: 10px;
+    padding-top: 10px;
+    display:inline-block;
+    border-top:2px solid #1C9FF0;     
+}
+
+
+
+
