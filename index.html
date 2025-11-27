@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tour's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html"> <img src="/Untitled-1.png" alt="logo-img" width="220px" height="50px"></a>
+        <div class="nav-items"> 
+        <nav>
+            <ul class="nav-list">
+            <li><a href="/index.html" class="nav-itm">Home</a></li>
+            <li><a href="#About" class="nav-itm">About</a></li>
+            <li><a href="#Contact" class="nav-itm">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="trip-btn">Plan My Trip</button>
+    </div>
+ </header>
+   
+     
+ 
+    <header class="p2">
+                 <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="/index.html">Home</a>
+                     <a href="#About">About</a>
+                     <a href="#Contact">Contact</a>
+                 </div>
+
+                 <div id="main">
+                      <span onclick="openNav()">&#9776;</span>
+                 </div>
+
+                <script>
+                   function openNav() {
+                   document.getElementById("mySidenav").style.width = "250px";
+                   document.getElementById("main").style.marginLeft = "250px";
+                   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                   }
+                    function closeNav() { 
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                    document.body.style.backgroundColor = "white";
+                    }
+                </script>
+    </header> 
+ <section class="hero"></section>
+ 
+
+  <section class="mid-sec">
+    <h1 class="sec-head">Popular Destinations!</h1>
+
+  </section><br><br>
+  <section>
+     <div class="grid-container">
+            <div class="card card-1">
+                <div class="card-content">
+                    <h3>Leh-Ladakh</h3>
+                    <p>City Of Valleys And Monasteries!</p>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card-content">
+                    <h3>Nepal Trek</h3>
+                    <p>A Journey To The World's Heighest Peakes!</p>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card-content">
+                    <h3>Bhutan Valley</h3>
+                    <p>The Land Of Joy And Coins!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About" class="features">
+        <h2> Our Facilities....</h2>
+        <div class="flex-container">
+            <div class="feature-item">
+                <h3>Expert Guides</h3>
+                <p>We Have Experienced Tour Guider's.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Best Safety</h3>
+                <p>Your Safety Is Our First Priority.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Affordable</h3>
+                <p>Budget-Friendly & Best Packages.</p>
+            </div>
+        </div>
+    </section><br><br><br>
+<footer>
+    <p id="Contact">&copy; 2025 PAXPLORE  |  Contact Us :03002753273</p> <p class="para-2"> More info visit our site: www.PAXPLORE.com </p>
+</footer>
+
+</body>
+</html>
